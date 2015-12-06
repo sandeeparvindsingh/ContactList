@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#DCDCDC" tools:context=".Contacts">
+<!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_contact"
+        android:layout_margin="10dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+android:layout_below="@id/search_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerviewxml"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
